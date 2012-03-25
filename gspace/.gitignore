@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+settings.py
+test.db
+*.swp
+.settings
+.sass-cache
+sass/*.swp
+error.log

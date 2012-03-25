@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Diavlo Black;
+    src: url('../fonts/Diavlo_BLACK_II_37.otf');
+}
+
+@font-face {
+    font-family: Diavlo Bold;
+    src: url('../fonts/Diavlo_BOLD_II_37.otf');
+}
+
+@font-face {
+    font-family: Diavlo Book;
+    src: url('../fonts/Diavlo_BOOK_II_37.otf');
+}
+
+@font-face {
+    font-family: Diavlo Light;
+    src: url('../fonts/Diavlo_LIGHT_II_37.otf');
+}
+
+@font-face {
+    font-family: Diavlo Medium;
+    src: url('../fonts/Diavlo_MEDIUM_II_37.otf');
+}
+
+@font-face {
+    font-family: Delicious Bold;
+    src: url('../fonts/Delicious-Bold.otf');
+}
+
+@font-face {
+    font-family: Delicious Italic;
+    src: url('../fonts/Delicious-Italic.otf');
+}
+
+@font-face {
+    font-family: Delicious Roman;
+    src: url('..fonts/Delicious-Roman.otf');
+}
+
+@font-face {
+    font-family: Declious SmallCaps;
+    src: url('../fonts/Delicious-SmallCaps.otf');
+}
+
+@font-face {
+    font-family: Open Sans Regular;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Open Sans Bold;
+    src: url('../fonts/OpenSans-Bold');
+}
+
+$font-default: Open Sans Regular, Helvetica, Arial, sans-serif;
+$font-navigation: Delicious Black, serif;
+$font-header-title: Delicious Bold, sans-serif;
+$font-footer: Diavlo Bold, sans-serif;
+$font-button: $font-default;
+$font-input: $font-default;
+

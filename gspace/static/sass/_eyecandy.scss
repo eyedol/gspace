@@ -1,0 +1,32 @@
+@mixin transform-mixin()
+  -moz-transform arguments
+  -webkit-transform arguments
+  -o-transform arguments
+  -ms-transform arguments
+  transform arguments
+
+@mixin transition-mixin() {
+  -webkit-transition arguments
+  -moz-transition arguments
+  -o-transition arguments
+  transition arguments
+}
+
+@mixin transition-transform-mixin()
+  -webkit-transition -webkit-transform arguments
+  -moz-transition -moz-transform arguments
+  -o-transition -o-transform arguments
+  transition transform arguments
+
+@mixin transition-position-mixin() {
+  -webkit-transition left arguments
+  -moz-transition left arguments
+  -o-transition left arguments
+  transition left arguments
+}
+
+@mixin animation-mixin() {
+  -webkit-animation arguments
+  -moz-animation    arguments
+  -ms-animation     arguments
+}

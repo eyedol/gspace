@@ -1,0 +1,101 @@
+@media only screen and (max-width: 480px) {
+   #header-title {
+        font-family: $font-header-title;
+        float: left;
+        padding-right: 0;
+        font-size: 30px;
+    }
+    #navigation {
+        padding-top: 10px;
+        .menu {
+            @include horizontal-list(3px);
+            a {
+                @include link-colors(black,$color-title-gs);
+                display: inline-block;
+                font-family: $font-navigation;
+                font-weight:bold;
+                text-decoration: none;
+                text-transform:uppercase;
+                            
+                &.active{
+                    background: $color-title-gs;
+                }
+            }
+        }
+
+    }
+
+    //info_board
+    $blueprint_grid_columns:8;
+    $blueprint_grid_width: 50px;
+    .info_board_container {
+        padding-top: 2em;
+        #one, #two {
+            @include column(4);
+        }
+    }
+
+    //footer
+    footer {
+        z-index: 0;
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #header-title {
+        font-family: $font-header-title;
+        float: left;
+        padding-right: 0;
+        font-size: 30px;
+    }
+    #navigation {
+        
+        .menu {
+            @include horizontal-list(4px);
+            a {
+                @include link-colors(black,$color-title-gs);
+                display: inline-block;
+                font-family: $font-navigation;
+                font-weight:bold;
+                text-decoration: none;
+                text-transform:uppercase;
+                            
+                &.active{
+                    background: $color-title-gs;
+                }
+            }
+        }
+
+    }
+
+    //info_board
+    $blueprint_grid_columns:8;
+    $blueprint_grid_width: 75px;
+    .info_board_container {
+        padding-top: 2em;
+        #one, #two {
+            @include column(4);
+        }
+    }
+
+    //footer
+    footer {
+        z-index: 0;
+        position: static;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+    }
+
+
+}
+
+
+
