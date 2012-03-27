@@ -466,6 +466,11 @@ body {
   src: url("../fonts/OpenSans-Bold");
 }
 
+@font-face {
+  font-family: Homenaje;
+  src: url("../fonts/Homenaje-Regular.ttf");
+}
+
 body {
   font-family: Open Sans Regular, Helvetica, Arial, sans-serif;
   background: url("../img/header.jpg");

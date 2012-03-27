@@ -53,9 +53,15 @@
     src: url('../fonts/OpenSans-Bold');
 }
 
+@font-face {
+    font-family: Homenaje;
+    src:url('../fonts/Homenaje-Regular.ttf');
+}
+
 $font-default: Open Sans Regular, Helvetica, Arial, sans-serif;
 $font-navigation: Delicious Black, serif;
 $font-header-title: Delicious Bold, sans-serif;
+$font-content-title: Homenaje , sans-serif;
 $font-footer: Diavlo Bold, sans-serif;
 $font-button: $font-default;
 $font-input: $font-default;

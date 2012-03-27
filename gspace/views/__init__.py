@@ -3,3 +3,4 @@
 import gspace.views.index
 import gspace.views.about
 import gspace.views.errors
+import gspace.views.membership
