@@ -16,7 +16,5 @@ def membership():
     if form.validate_on_submit():
         ## Save this to google spreadsheet
         flash("Thanks :-)",category='message')
-    else: 
-        flash("Please correct the indicated errors", category='interactive')
     
     return render_template('membership.html',form=form)

@@ -1,0 +1,185 @@
+/* Form elements */
+div.field {
+    @include pie-clearfix;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    .checkbox label {
+        padding-left: 0.5em;
+    }
+    &.small div.label {
+        float: left;
+        clear: left;
+        width: 10em;
+        padding-top: 6px; // Make label align with text in fields
+        label {
+            font-weight: bold;
+        }
+    }
+    &.small div.control {
+        float: left;
+        width: 35em;
+        ul {
+            -moz-column-count: 2;
+            list-style: none;
+            margin: 0;
+            li {
+                padding: 0.5em;
+                @include border-radius(4px);
+                label {
+                    padding-left: 0.5em;
+                }
+                }
+            li.selected {
+                background-color: $color-listing-background;
+            }
+        }
+    }
+    &.check div.label {
+        display: none;
+    }
+    &.wide div.label {
+        float: none;
+        clear: left;
+        label {
+            font-weight: bold;
+        }
+    }
+    &.wide div.control {
+            margin-top: 0.25em;
+            float: none;
+            clear: left;
+    }
+}
+
+span.description {
+    font-size: 90%;
+    color: #666;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+input, textarea {
+    font-family: $font-input;
+}
+
+fieldset {
+    @include pie-clearfix;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    width: 90%;
+    height: 10em;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="email"], input[type="url"], select {
+    padding: 5px;
+    color: #444;
+    border: 1px solid $color-outline;
+    @include border-radius(3px);
+}
+
+textarea, input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+    @include box-shadow(0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="url"] {
+        width: 30.5em;
+        height: 2em;
+        margin-bottom: 5px;
+        background: #fff;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid $color-outline;
+    font-family: $font-button;
+    font-size: 16px;
+    @include border-radius(5px);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 0 12px;
+    background: $color-submit-button-background;
+    @include background-image(linear-gradient($color-submit-button-background, $color-submit-button-image));
+    font-weight: bold;
+    color: #444;
+    vertical-align: text-bottom;
+    &:hover {
+        background: $color-submit-button-image;
+        @include background-image(linear-gradient($color-submit-button-image, #c6c6c6));
+    }
+}
+
+div.error {
+    position: relative;
+    background-color: $color-title-gs;
+    color: #fff;
+    margin: 1em 10em;
+    padding: 0.5em 1em;
+    @include border-radius(3px);
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -17px;
+        left: 1em;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: $color-title-gs;
+    }
+}
+
+.flash {
+    background: $color-sheet;
+    max-width: 860px;
+    font-size: 120%;
+    position: relative;
+    margin: {
+        left: auto;
+        right: auto;
+        top: 2em;
+        bottom: 1em;
+    }
+    border: 1px solid $color-sheet-border;
+    @include border-radius(4px);
+    div.flashmessage, div.guidecontent {
+        margin: 1em 2em;
+    }
+    p, blockquote, ul, ol {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    form {
+        margin-bottom: 2em;
+    }
+    @include single-box-shadow($color-shadow, 0, 2px, 10px);
+}
+
+/*.flash-info:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -21px; 
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $color-sheet-border;
+}
+
+/* creates the smaller  triangle */
+/*.flash-info:after {
+    content: "";
+    display: block; 
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $color-sheet;
+}*/

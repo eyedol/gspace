@@ -1,6 +1,6 @@
 {% macro renderfield(field, css_class="", widget_css_class=None, autofocus=False, nolabeldesc=False) -%}
     {% if field.errors %}
-        {% for error in field.error %}<div class="error">{{ error }}</div>{% endfor %}
+        {% for error in field.errors %}<div class="error">{{ error }}</div>{% endfor %}
     {% endif %}
     <div class="field{% if css_class %} {{ css_class }}{% endif %}" id="field-{{ field.id }}">
         {% if not nolabeldesc %}<div class="label">{{ field.label }}</div>{% endif %}

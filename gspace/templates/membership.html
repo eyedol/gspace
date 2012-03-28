@@ -8,25 +8,13 @@
         <span class="g">g</span><span class="space">space</span> 
         member, fill out the form below and we will notify you 
         when applications for membership are open. Alternatively,
-        contribute in building this space and you get a free invite.
+        contribute in building this space and you will get a hassle free invite.
     </div>
     <div id="wrapper">
         <form id="membership" method="POST">
-            {{ form.hidden_tag() }}
-            <div class="section">
-                {% if form.errors %}
-                    {% for error in form.errors %}<div class="error">{{ error }}</div>{% endfor %}
-                {% endif %}
-                               
-               <div id="flash-messages">
-                    {%- for category, msg in get_flashed_messages(with_categories=true) %}
-                    <div class="flash flash-{{ category }}"><div class="flashmessage">{{ msg }}</div></div>
-                    {%- endfor %}
-                </div>
+            {{ form.hidden_tag() }}                          
                 {{ renderfield(form.full_name, "small", autofocus=True) }}
-
                 {% if not no_email %}{{ renderfield(form.email_address, "small") }}{% endif %}
-            </div>
             <input type="submit" value="Submit"/>
         </form>
     </div>
