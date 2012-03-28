@@ -12,6 +12,12 @@
     </div>
     <div id="wrapper">
         <form id="membership" method="POST">
+            <div id="show-messages">
+            {%- for category, msg in get_flashed_messages(with_categories=true) %}
+            <div class="flash flash-{{ category }}"><div class="flashmessage">{{ msg }}</div></div>
+            {%- endfor %}
+      </div>
+
             {{ form.hidden_tag() }}                          
                 {{ renderfield(form.full_name, "small", autofocus=True) }}
                 {% if not no_email %}{{ renderfield(form.email_address, "small") }}{% endif %}

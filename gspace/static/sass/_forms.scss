@@ -88,7 +88,7 @@ textarea, input[type="text"], input[type="password"], input[type="email"], input
 
 input[type="text"], input[type="email"], input[type="password"], input[type="url"] {
         width: 30.5em;
-        height: 2em;
+        height: 1em;
         margin-bottom: 5px;
         background: #fff;
 }
@@ -138,6 +138,7 @@ div.error {
     max-width: 860px;
     font-size: 120%;
     position: relative;
+    color: $color-logo-g;
     margin: {
         left: auto;
         right: auto;
