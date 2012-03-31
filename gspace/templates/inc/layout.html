@@ -14,7 +14,7 @@
     <meta name="author" href="/humans.txt">
 
     <link rel="icon" href="/favicon.ico"/>
-
+    {% block headerassets %}{% endblock %}
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,6 +79,8 @@
         })(document, 'script');
         </script>
         {% endif -%}
+
+        {% block footerexternaljs %}{% endblock %}
 
         {% block footerscripts %}{% endblock %}
     </body>

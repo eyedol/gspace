@@ -1,5 +1,13 @@
 {% extends "inc/layout.html" %}
 {% block title %}gspace{% endblock %}
+{% block headerassets %} 
+    <link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" /> 
+    <link rel="stylesheet" href="http://www.addhen.org/wedding/css/style.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.ie.css" />
+    <![endif]-->
+    <script src="http://code.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
+{% endblock %}
 {% block content %}
     <h2 id="welcome">Background Information</h2>
     <div id="intro">
@@ -15,6 +23,26 @@
             <h2>gspace Location</h2>
             <p>The iHub’s location is going to be on the 4th floor of the Bishop Magua Centre on Ngong Road (directly opposite the Uchumi Hyper). It’s an amazing location, with quick access to public transportation, food and the City Centre. 
             View [iHub – Nairobi’s Innovation](http://www.gspace.com) Hub in a larger map</p><br /><br />
+            <div id="info_board">
+                <h2>We're at</h2>
+                <div id="map"></div>
+                
+<script>
+var map = new L.Map('map');
+var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/0cb2761ce981414391f2941dd891892c/997/256/{z}/{x}/{y}.png',
+    cloudmadeAttrib = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
+    cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttrib});
+
+var labadi = new L.LatLng(5.5634, -0.13804);
+map.setView(labadi, 17).addLayer(cloudmade);
+
+var labadiMarker = new L.Marker(labadi);
+map.addLayer(labadiMarker);
+var labadiPopup = new L.Popup();
+labadiMarker.bindPopup("<strong>Busy Internet</strong><br />Ring Road East, Accra, Ghana").openPopup();
+map.getPanes()["popupPane"].className = "swinging leaflet-popup-pane";
+</script>
+            </div><br /><br />
             </article>
 
         <article> 
@@ -31,3 +59,6 @@ The space was made possible by funding to Ushahidi by the Omidyar Network and Hi
     </div>
 
 {% endblock %}
+
+</script>
+
