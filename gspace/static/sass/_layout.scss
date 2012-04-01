@@ -57,16 +57,12 @@ header {
     .menu {
         @include horizontal-list(10px);
         a {
-            @include link-colors(black,$color-title-gs);
             font-family: $font-navigation;
             font-weight:500;
             text-decoration: none;
             text-transform:uppercase;
-            display:block;
-            
-            &.active{
-                background: $color-title-gs;
-            }
+            @include link-colors(black,$color-title-gs,$color-logo-g);
+
         }
     }
 }
@@ -133,20 +129,23 @@ $blueprint_grid_width: 94px;
 #wrapper {
     @include column(8);
     padding-top: 0.8em;
-    p {
-        padding-top: 0.8em 0.8em;
+    article p {
+        padding: 0.3em;
     }
-
     h2 {
-        font-weight: bold;
+        font-family : $font-footer;
         font-size: 20px;
+        color : $color-title-gs;
+        border-bottom: 1px solid $color_shadow;
+        margin-top: 1em;
+        margin-bottom : 1em;
     }
 }
 
 #map {
     width: 100%; 
     margin:10px auto;
-    @include box-shadow: 0 0 10px 5px rgba(2, 2, 2, 0.1);
+    
 }
 
 

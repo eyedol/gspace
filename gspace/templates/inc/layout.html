@@ -58,11 +58,12 @@
 
         {% block footer %}
         <footer>
-            <div id="copyright">&copy; 2012 GSpace</div>
+            <div id="copyright">&copy; 2012 gspace</div>
             {% include "inc/socialmedialinks.html" -%}
         </footer>
         {% endblock %}
-        <!-- Included JS Files -->
+
+        <!-- include js files -->
         {% assets "js_all" -%}
             <script type="text/javascript" src="{{ ASSET_URL }}"></script>
         {% endassets -%}
@@ -79,9 +80,7 @@
         })(document, 'script');
         </script>
         {% endif -%}
-
         {% block footerexternaljs %}{% endblock %}
-
         {% block footerscripts %}{% endblock %}
     </body>
 </html>

@@ -6,4 +6,5 @@ from gspace import app
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    home = {'welcome': render_template('content/home/welcome.md')}
+    return render_template('index.html',home=home)
