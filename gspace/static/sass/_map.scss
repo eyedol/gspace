@@ -1,0 +1,43 @@
+@-moz-keyframes swing {
+  0% {
+    -moz-transform: translate(0, 2px); }
+  100% {
+    -moz-transform: translate(0, -2px); } }
+
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: translate(0, 2px); }
+  100% {
+    -webkit-transform: translate(0, -2px); } }
+
+
+@keyframes swing {
+  0% {
+    transform: translate(0, 2px); }
+  100% {
+    transform: translate(0, -2px); } }
+
+
+.swinging {
+  -webkit-transform-origin: center top;
+  -webkit-animation-name: swing;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: swing;
+  -moz-animation-duration: 1s;
+  -moz-animation-direction: alternate;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#map {
+  width: 550px;
+  height: 400px; 
+}

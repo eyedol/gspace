@@ -1,0 +1,39 @@
+
+.tweet_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+    li {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0.5em;
+        list-style-type: none;
+        a, a:link, a:hover, a:focus, a:active, a:visited {
+            display: block;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        } 
+    }
+
+    .tweet_avatar {
+        padding-right: .5em;
+        float: left;
+    img {
+        vertical-align: middle; 
+    }
+
+  } 
+}
+
+.tweet_time {
+    color: red;
+    font-size: 10px;
+    float: right;
+    a {
+        color: $color-sheet-border;
+    }
+}
+
