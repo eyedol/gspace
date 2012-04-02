@@ -15,6 +15,7 @@ def membership():
     form = MembershipForm()
     if form.validate_on_submit():
         ## Save this to google spreadsheet
-        flash("Thanks :-)",category='message')
-    
+        form.save_to_google_doc()
+        flash("Thanks :-) ",category='message')
+        return redirect(url_for('membership'))
     return render_template('membership.html',form=form)
