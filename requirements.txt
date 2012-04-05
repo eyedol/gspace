@@ -3,6 +3,8 @@ Flask-SQLAlchemy
 Flask-Admin
 Flask-Mail
 Flask-WTF
-Flask-Mardown
-urlib2
-urlib
+Flask-Markdown
+Flask-Assets
+urllib2
+urllib2
+BeautifulSoup
