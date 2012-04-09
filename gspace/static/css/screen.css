@@ -472,7 +472,6 @@ body {
 }
 
 #top_pics {
-  width: 875px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -491,17 +490,18 @@ body {
 }
 #top_pics #pics ul {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  float: left;
 }
 #top_pics #pics ul li {
   display: inline;
+  width: 75px;
+  height: 75px;
 }
 #top_pics #pics ul li img {
   border: none;
   padding: 0 5px 5px 0;
-  width: 75px;
-  height: 75px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
@@ -851,7 +851,7 @@ header:after {
   font-family: Delicious Bold, sans-serif;
   float: left;
   padding-right: 5em;
-  font-size: 35px;
+  font-size: 2.18em;
   font-weight: bold;
   text-shadow: rgba(0, 0, 0, 0.4) -3px 1px 1px;
 }
@@ -919,7 +919,7 @@ header:after {
 }
 #navigation .menu a {
   font-family: Delicious black, serif;
-  font-weight: 500;
+  font-weight: 31.25em;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -933,7 +933,7 @@ header:after {
 
 #blob {
   *zoom: 1;
-  max-width: 875px;
+  max-width: 885px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -961,7 +961,7 @@ header:after {
 }
 #blob #info #welcome {
   font-family: Diavlo Bold, sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #d6001a;
   margin-bottom: 20px;
 }
@@ -1057,7 +1057,7 @@ footer {
 }
 #info_board h2 {
   font-family: Diavlo Bold, sans-serif;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #d6001a;
   border-bottom: 1px solid #afafaf;
   margin-bottom: 20px;
@@ -1080,7 +1080,7 @@ footer {
 }
 #info_board #meta {
   color: #afafaf;
-  font-size: 10px;
+  font-size: 0.62px;
 }
 
 footer {

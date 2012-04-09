@@ -1,5 +1,12 @@
 {% extends "inc/layout.html" %}
 {% block title %}gspace | Welcome To gspace {% endblock %}
+{% block headerassets %}
+    <!-- Include CSS files for floatbox -->
+    {% assets "floatbox_css" -%}
+    <link rel="stylesheet" href="{{ ASSET_URL }}"/>
+    {% endassets -%}
+
+{% endblock %}
 {% block content %}
     <h2 id="welcome">Welcome To gspace</h2>
     <div id="intro">
@@ -34,6 +41,12 @@
         </div>
     </div>
     
+{% endblock %}
+{% block footerexternaljs %}
+    <!-- include js files -->
+    {% assets "floatbox_js" -%}
+        <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets -%}
 {% endblock %}
 {% block footerscripts %}
 <script type="text/javascript">

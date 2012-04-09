@@ -31,12 +31,19 @@ css = Bundle(
     filters='cssmin',output='css/gspace-css-min.css')
 assets.register('css_all', css)
 
+floatbox_css = Bundle('js/libs/floatbox/floatbox.css',
+        filters='cssmin',output='js/libs/floatbox/floatbox-min.css')
+assets.register('floatbox_css',floatbox_css)
+
 js = Bundle('js/libs/jquery-1.7.1.js',
     'js/libs/jquery.tweet.js',
     filters='jsmin',
     output='js/gspace-js-min.js')
 assets.register('js_all', js)
 
+floatbox_js = Bundle('js/libs/floatbox/floatbox.js'
+        )
+assets.register('floatbox_js',floatbox_js)
 
 # 4, setup admin for the models
 

@@ -2,7 +2,7 @@
     <div id="pics">
         <ul>
             {%- for photo in photos -%}
-            <li><a href="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_z.jpg" title="{{photo.title}}"><img src="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg" /></a></li>
+            <li><a href="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_z.jpg" title="{{photo.title}}" class="floatbox" data-fb-options="doSlideshow:true group:flickrviewer" rev="group:flickrviewer" ><img src="http://farm{{photo.farm}}.static.flickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg" title="{{photo.title}}" alt="{{photo.title}}" /></a></li>
             {%- endfor -%}
         </ul>
     </div>

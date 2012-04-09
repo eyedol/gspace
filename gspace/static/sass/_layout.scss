@@ -18,7 +18,7 @@ header {
     font-family: $font-header-title;
     float: left;
     padding-right: 5em;
-    font-size: 35px;
+    font-size: 2.18em;
     font-weight: bold;
     @include single-text-shadow($color-shadow, -3px, 1px, 1px);
     .g {
@@ -58,7 +58,7 @@ header {
         @include horizontal-list(10px);
         a {
             font-family: $font-navigation;
-            font-weight:500;
+            font-weight:31.25em;
             text-decoration: none;
             text-transform:uppercase;
             @include link-colors(black,$color-title-gs,$color-logo-g);
@@ -70,7 +70,7 @@ header {
 //main content
 #blob {
     @include pie-clearfix;
-    max-width: 875px;
+    max-width: 885px;
     margin: {
         left: auto;
         right: auto;
@@ -94,7 +94,7 @@ header {
         }
         #welcome {
             font-family : $font-footer;
-            font-size: 20px;
+            font-size: 1.25em;
             color : $color-title-gs;
             margin-bottom : 20px;
         }
@@ -157,7 +157,7 @@ $blueprint_grid_width: 90px;
     background: white;
 
     h2 {font-family : $font-footer;
-        font-size: 20px;
+        font-size: 1.25em;
         color : $color-title-gs;
         border-bottom: 1px solid $color-sheet-border;
         margin-bottom : 20px;
@@ -181,7 +181,7 @@ $blueprint_grid_width: 90px;
     }
     #meta {
         color: $color-sheet-border;
-        font-size: 10px;
+        font-size: 0.62px;
     }
 
 }
