@@ -472,10 +472,7 @@ body {
 }
 
 #top_pics {
-  width: 900px;
-  margin: 0 auto;
-  overflow: hidden;
-  *zoom: 1;
+  width: 875px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -484,26 +481,31 @@ body {
   -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  background: black;
   margin-bottom: 20px;
 }
-#top_pics #one {
+#top_pics #pics {
+  padding: 5px 0 0 5px;
+  margin: 0px;
+  overflow: hidden;
+}
+#top_pics #pics ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+#top_pics #pics ul li {
   display: inline;
-  float: left;
-  margin-right: 0;
-  width: 1270px;
-  margin-right: 0px;
-  padding: 0;
 }
-* html #top_pics #one {
-  overflow-x: hidden;
-}
-#top_pics #one img {
-  width: 72px;
-  height: 72px;
+#top_pics #pics ul li img {
+  border: none;
+  padding: 0 5px 5px 0;
+  width: 75px;
+  height: 75px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-#top_pics #one img:hover {
+#top_pics #pics ul li img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
@@ -931,7 +933,7 @@ header:after {
 
 #blob {
   *zoom: 1;
-  max-width: 900px;
+  max-width: 875px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -1007,7 +1009,7 @@ footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 406px;
+  width: 390px;
 }
 * html .info_board_container #one, * html .info_board_container #two {
   overflow-x: hidden;
@@ -1017,7 +1019,7 @@ footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 822px;
+  width: 790px;
   padding-top: 0.8em;
 }
 * html #wrapper {

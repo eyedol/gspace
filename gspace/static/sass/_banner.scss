@@ -1,23 +1,30 @@
-$blueprint-container-size: 900px;
-$blueprint-grid-columns: 8;
-$blueprint-grid-width: 150px;
 #top_pics {
-    @include container;
+    width:875px;
     @include border-radius(5px);
     @include single-box-shadow($color-shadow, 1px, 1px, 1px, 1px);
+    background:black;
     margin-bottom: 20px;
-    #one {
-        @include column(8, last());
-        margin-right:0px;
-        padding:0;
-        img {
-            width: 72px;
-            height: 72px;
-            @include opacity(1);
-            &:hover {
-              @include opacity(0.7);  
-            }
-        }
+    #pics {
+        padding: 5px 0 0 5px;
+        margin: 0px;
+        overflow: hidden;
+        ul {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            li {
+                display: inline;
+                img {
+                    border: none;
+                    padding: 0 5px 5px 0;
+                    width: 75px;
+                    height: 75px;
+                    @include opacity(1);
+                    &:hover {
+                        @include opacity(0.7);
+                    } 
+                } 
+            } 
+        } 
     }
 }
-

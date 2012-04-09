@@ -23,9 +23,11 @@ import gspace.views
 
 assets = Environment(app)
 
-css = Bundle('css/screen.css',
+css = Bundle(
+    'css/screen.css',
     'css/print.css',
     'css/ie.css',
+    'css/slider.min.css',
     filters='cssmin',output='css/gspace-css-min.css')
 assets.register('css_all', css)
 

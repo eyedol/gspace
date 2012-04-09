@@ -70,7 +70,7 @@ header {
 //main content
 #blob {
     @include pie-clearfix;
-    max-width: 900px;
+    max-width: 875px;
     margin: {
         left: auto;
         right: auto;
@@ -118,7 +118,7 @@ header {
 
 //info_board
 $blueprint_grid_columns:8;
-$blueprint_grid_width: 94px;
+$blueprint_grid_width: 90px;
 .info_board_container {
     padding-top: 2em;
     #one, #two {
