@@ -1,5 +1,5 @@
 {% extends "inc/layout.html" %}
-{% block title %}gspace | Welcome To gspace {% endblock %}
+{% block title %}Welcome To gspace {% endblock %}
 {% block headerassets %}
     <!-- Include CSS files for floatbox -->
     {% assets "floatbox_css" -%}
@@ -7,6 +7,7 @@
     {% endassets -%}
 
 {% endblock %}
+{% block pageheader %}{% include "inc/slideshow.html" -%}{% endblock %}
 {% block content %}
     <h2 id="welcome">Welcome To gspace</h2>
     <div id="intro">

@@ -1,10 +1,5 @@
-HasGeek App Boilerplate
+gspace
 =======================
-
-Base template for an app that uses LastUser, BaseFrame and Coaster with Flask
-and SQLAlchemy. To use this, clone this repository and rename all references
-to "hgapp" with the name of your new app.
-
-This boilerplate uses Compass for custom stylesheets. Stylesheets are located
-in `hgapp/static/sass` and may be rebuilt with `compass compile`. To rebuild
-automatically, use `compass watch`.
+This is a work in progress for supposed hacker space for Ghana. It's 
+still in the works to get the space up and running. Keep checking back.
+In the mean time, the site has been deployed at http://gspace.addhen.org

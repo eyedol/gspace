@@ -3,7 +3,7 @@
         font-family: $font-header-title;
         float: left;
         padding-right: 0;
-        font-size: 30px;
+        font-size: 2.18em;
     }
     #navigation {
         padding-top: 10px;
@@ -27,7 +27,7 @@
 
     //info_board
     $blueprint_grid_columns:8;
-    $blueprint_grid_width: 50px;
+    $blueprint_grid_width: 45px;
     .info_board_container {
         padding-top: 2em;
         #one, #two {
@@ -52,7 +52,7 @@
         font-family: $font-header-title;
         float: left;
         padding-right: 0;
-        font-size: 30px;
+        font-size: 2.18em;
     }
     #navigation {
         
@@ -76,7 +76,7 @@
 
     //info_board
     $blueprint_grid_columns:8;
-    $blueprint_grid_width: 75px;
+    $blueprint_grid_width: 70px;
     .info_board_container {
         padding-top: 2em;
         #one, #two {

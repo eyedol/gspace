@@ -1009,7 +1009,7 @@ footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 390px;
+  width: 378px;
 }
 * html .info_board_container #one, * html .info_board_container #two {
   overflow-x: hidden;
@@ -1019,7 +1019,7 @@ footer {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 790px;
+  width: 766px;
   padding-top: 0.8em;
 }
 * html #wrapper {
@@ -1228,7 +1228,7 @@ footer #social .item #facebook:hover {
     font-family: Delicious Bold, sans-serif;
     float: left;
     padding-right: 0;
-    font-size: 30px;
+    font-size: 2.18em;
   }
 
   #navigation {
@@ -1282,7 +1282,7 @@ footer #social .item #facebook:hover {
     display: inline;
     float: left;
     margin-right: 10px;
-    width: 230px;
+    width: 210px;
   }
   * html .info_board_container #one, * html .info_board_container #two {
     overflow-x: hidden;
@@ -1302,7 +1302,7 @@ footer #social .item #facebook:hover {
     font-family: Delicious Bold, sans-serif;
     float: left;
     padding-right: 0;
-    font-size: 30px;
+    font-size: 2.18em;
   }
 
   #navigation .menu {
@@ -1353,7 +1353,7 @@ footer #social .item #facebook:hover {
     display: inline;
     float: left;
     margin-right: 10px;
-    width: 330px;
+    width: 310px;
   }
   * html .info_board_container #one, * html .info_board_container #two {
     overflow-x: hidden;
