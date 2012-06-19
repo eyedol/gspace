@@ -24,13 +24,13 @@ var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/0cb2761ce981414391f2941dd89189
     cloudmadeAttrib = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
     cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttrib});
 
-var labadi = new L.LatLng(5.5634, -0.13804);
-map.setView(labadi, 17).addLayer(cloudmade);
+var busy = new L.LatLng(5.571419,-0.209399);
+map.setView(busy, 17).addLayer(cloudmade);
 
-var labadiMarker = new L.Marker(labadi);
-map.addLayer(labadiMarker);
-var labadiPopup = new L.Popup();
-labadiMarker.bindPopup("<strong>Busy Internet</strong><br />Ring Road East, Accra, Ghana").openPopup();
+var busyMarker = new L.Marker(busy);
+map.addLayer(busyMarker);
+var busyPopup = new L.Popup();
+busyMarker.bindPopup("<strong>Busy Internet</strong><br />Ring Road East, Accra, Ghana").openPopup();
 map.getPanes()["popupPane"].className = "swinging leaflet-popup-pane";
 </script>
             </div>
